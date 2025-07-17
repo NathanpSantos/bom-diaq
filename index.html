@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Bom dia, preguiça! 🦥</title>
+ <style>
+  body {
+    background-color: #998d8fff;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 50px;
+    color: #222;
+  }
+
+  h1 {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px 20px;
+    border-radius: 10px;
+    display: inline-block;
+  }
+
+  button {
+    background-color: #ff69b4;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+
+  #mensagem {
+    margin-top: 30px;
+    font-size: 18px;
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 20px;
+    border-radius: 10px;
+    display: inline-block;
+  }
+
+  #imagemEngracada {
+    margin-top: 20px;
+    max-width: 250px;
+    border-radius: 12px;
+    display: none;
+  }
+</style>
+</head>
+<body>
+  <h1>🌞 Bom dia, minha Dorminhoca!</h1>
+  <button onclick="mostrarMensagem()">Clique para ver a pérola do dia</button>
+
+  <div id="mensagem"></div>
+  <img id="imagemEngracada" src="imagemEngracada.png" alt="Imagem engraçada dela">
+
+  <script>
+    function mostrarMensagem() {
+      const msg = `
+        🦥 Bom trabalho, quintouuuuuuuuu. Amanhã é folguinha boa, 
+        <br>Então sorriso na cara, peito pra frente, bunda pra trás, faz a pose e manda uma foto sua claro kkkk<br>
+        <br>❤️
+      `;
+      document.getElementById("mensagem").innerHTML = msg;
+      document.getElementById("imagemEngracada").style.display = "block";
+    }
+  </script>
+</body>
+</html>
